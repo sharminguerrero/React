@@ -15,11 +15,12 @@ console.log(letters, numbers);
 
 // Tarea:
 
-const useState = (value: string) => {
+const useState = (value: string) =>  {
      return [
-          value,
-          (newValue: string) =>
-          console.log(newValue)
+          value, 
+          (newValue: string) =>  {
+               console.log(newValue);
+          },
      ] as const;
 }
 
